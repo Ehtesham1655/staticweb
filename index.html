@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple eCommerce Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f5f5;
+    }
+
+    /* Header */
+    header {
+      background-color: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    /* Product Section */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .product {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 20px;
+      transition: transform 0.2s;
+    }
+
+    .product:hover {
+      transform: scale(1.05);
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 10px;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .product h3 {
+      margin: 10px 0 5px;
+    }
+
+    .product p {
+      color: #666;
+    }
+
+    .price {
+      color: #e63946;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .btn {
+      background-color: #0077cc;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #005fa3;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Simple Shop</h1>
+    <p>Trendy Products. Great Prices.</p>
+  </header>
+
+  <section class="products">
+    <div class="product">
+      <img src="https://via.placeholder.com/300x200" alt="Product 1">
+      <h3>Stylish Watch</h3>
+      <p>Elegant and modern design.</p>
+      <div class="price">$49.99</div>
+      <button class="btn">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://via.placeholder.com/300x200" alt="Product 2">
+      <h3>Wireless Headphones</h3>
+      <p>Clear sound and strong bass.</p>
+      <div class="price">$89.99</div>
+      <button class="btn">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://via.placeholder.com/300x200" alt="Product 3">
+      <h3>Smartphone Case</h3>
+      <p>Durable and sleek protection.</p>
+      <div class="price">$15.99</div>
+      <button class="btn">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://via.placeholder.com/300x200" alt="Product 4">
+      <h3>Sports Shoes</h3>
+      <p>Comfortable for everyday wear.</p>
+      <div class="price">$59.99</div>
+      <button class="btn">Add to Cart</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My Simple Shop | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
